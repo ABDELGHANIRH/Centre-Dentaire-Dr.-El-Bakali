@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Dentaire Dr. El Bakali | Excellence à Fès</title>
+    <meta name="description" content="Découvrez l'excellence dentaire au Centre Dentaire Dr. El Bakali à Fès.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-bg': '#FAFAFA',
+                        'brand-dark': '#111111',
+                        'brand-gold': '#D4AF37',
+                        'brand-gold-light': '#FEFCE8'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Hide scrollbar for horizontal timeline */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-dark font-sans tracking-wide antialiased">
+
+    <!-- 1. NAVIGATION -->
+    <header class="fixed top-0 w-full z-40 bg-brand-bg/85 backdrop-blur-md border-b border-stone-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-5 flex justify-between items-center">
+            <div class="font-serif text-xl tracking-widest text-brand-dark uppercase">
+                <a href="#">DR. EL BAKALI</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-xs uppercase tracking-widest text-stone-500">
+                <a href="#accueil" class="hover:text-brand-dark transition-colors">Accueil</a>
+                <a href="#cabinet" class="hover:text-brand-dark transition-colors">Le Cabinet</a>
+                <a href="#specialites" class="hover:text-brand-dark transition-colors">Spécialités</a>
+                <a href="#reservation" class="hover:text-brand-gold transition-colors text-brand-dark">Prendre Rendez-vous</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-brand-dark">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. HÉRO -->
+        <section id="accueil" class="pt-32 pb-20 lg:pt-40 lg:pb-32 px-6 lg:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <!-- Gauche -->
+                <div class="lg:col-span-5 flex flex-col justify-center order-2 lg:order-1">
+                    <h1 class="font-serif text-4xl lg:text-5xl xl:text-6xl font-light leading-tight mb-8">
+                        L'excellence dentaire <br>
+                        <span class="italic text-brand-gold">sur-mesure.</span>
+                    </h1>
+                    <p class="text-sm leading-relaxed text-stone-600 mb-10 tracking-wide">
+                        Découvrez une approche unique de la médecine dentaire dans un espace architectural pensé pour votre sérénité. Des soins de haute précision au cœur de Fès.
+                    </p>
+                    <div>
+                        <a href="#reservation" class="inline-block bg-brand-dark text-brand-bg py-4 px-8 text-xs uppercase tracking-widest hover:bg-black transition-colors">
+                            Demander un Rendez-vous
+                        </a>
+                    </div>
+                </div>
+                <!-- Droite -->
+                <div class="lg:col-span-7 flex flex-col items-end order-1 lg:order-2">
+                    <div class="w-full relative">
+                        <!-- Image Exacte Demandée -->
+                        <img src="unnamed (1).jpg" alt="Réception du Centre Dentaire" class="w-full h-[480px] object-cover shadow-sm border border-stone-200">
+                    </div>
+                    <p class="text-[11px] font-light text-stone-500 mt-4 max-w-sm text-right uppercase tracking-widest">
+                        Un cadre moderne et chaleureux conçu pour votre confort — Route d'Aïn Chkef
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-stone-200 max-w-7xl mx-auto">
+
+        <!-- 3. LE CABINET & MATÉRIAUX -->
+        <section id="cabinet" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="font-serif text-3xl font-light mb-6">Un Écrin de Sérénité</h2>
+                </div>
+                <div>
+                    <p class="text-sm leading-relaxed text-stone-600 tracking-wide mb-6">
+                        Notre clinique a été pensée comme un espace où l'architecture elle-même participe à votre bien-être. L'alliance de matériaux nobles tels que le chêne naturel et le marbre noir crée une atmosphère apaisante, loin des standards cliniques habituels.
+                    </p>
+                    <p class="text-sm leading-relaxed text-stone-600 tracking-wide">
+                        Un éclairage minutieusement étudié et un design épuré éliminent le stress des soins pour faire de chaque visite un moment de confort exclusif, sublimé par nos technologies de pointe.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. LES SPÉCIALITÉS -->
+        <section id="specialites" class="py-24 px-6 lg:px-12 bg-white border-y border-stone-200">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-xs uppercase tracking-widest text-stone-500 mb-16 text-center">Nos Spécialités</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-stone-200">
+                    <!-- 01 -->
+                    <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-stone-200 flex flex-col h-full hover:bg-brand-bg transition-colors">
+                        <span class="font-serif text-xl text-brand-gold mb-6 block">01.</span>
+                        <h3 class="font-serif text-2xl font-light mb-4">Implantologie Avancée</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Restauration parfaite de votre dentition grâce à la chirurgie guidée de haute précision et l'utilisation exclusive de matériaux premium.
+                        </p>
+                    </div>
+                    <!-- 02 -->
+                    <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-stone-200 flex flex-col h-full hover:bg-brand-bg transition-colors">
+                        <span class="font-serif text-xl text-brand-gold mb-6 block">02.</span>
+                        <h3 class="font-serif text-2xl font-light mb-4">Orthodontie Moderne</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Correction de votre sourire tout en discrétion grâce aux aligneurs invisibles dernière génération, alliant esthétique et efficacité.
+                        </p>
+                    </div>
+                    <!-- 03 -->
+                    <div class="p-10 lg:p-14 flex flex-col h-full hover:bg-brand-bg transition-colors">
+                        <span class="font-serif text-xl text-brand-gold mb-6 block">03.</span>
+                        <h3 class="font-serif text-2xl font-light mb-4">Esthétique du Sourire</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed">
+                            Sublimation de votre sourire par la pose de facettes céramiques ultra-fines et des protocoles d'éclaircissement dentaire sur-mesure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SYSTÈME DE RÉSERVATION -->
+        <section id="reservation" class="py-24 px-6 lg:px-12 max-w-3xl mx-auto">
+            <h2 class="font-serif text-3xl font-light mb-12 text-center">Planifier votre visite</h2>
+            
+            <div class="border border-stone-200 p-8 lg:p-12 bg-white">
+                <!-- Date Selector -->
+                <div class="mb-10">
+                    <div class="flex overflow-x-auto no-scrollbar gap-8 pb-4 items-end border-b border-stone-100">
+                        <!-- Dates -->
+                        <div class="date-btn flex flex-col items-center cursor-pointer opacity-40 hover:opacity-100 transition-opacity min-w-max" data-date="15">
+                            <span class="text-[10px] uppercase tracking-widest mb-3">Lun</span>
+                            <span class="text-xl font-serif">15</span>
+                        </div>
+                        <div class="w-px h-6 bg-stone-200 mb-1"></div>
+                        
+                        <div class="date-btn flex flex-col items-center cursor-pointer active-date text-brand-gold opacity-100 transition-opacity min-w-max" data-date="16">
+                            <span class="text-[10px] uppercase tracking-widest mb-3 text-brand-dark">Mar</span>
+                            <span class="text-xl font-serif">16</span>
+                        </div>
+                        <div class="w-px h-6 bg-stone-200 mb-1"></div>
+                        
+                        <div class="date-btn flex flex-col items-center cursor-pointer opacity-40 hover:opacity-100 transition-opacity min-w-max" data-date="17">
+                            <span class="text-[10px] uppercase tracking-widest mb-3">Mer</span>
+                            <span class="text-xl font-serif">17</span>
+                        </div>
+                        <div class="w-px h-6 bg-stone-200 mb-1"></div>
+                        
+                        <div class="date-btn flex flex-col items-center cursor-pointer opacity-40 hover:opacity-100 transition-opacity min-w-max" data-date="18">
+                            <span class="text-[10px] uppercase tracking-widest mb-3">Jeu</span>
+                            <span class="text-xl font-serif">18</span>
+                        </div>
+                        <div class="w-px h-6 bg-stone-200 mb-1"></div>
+
+                        <div class="date-btn flex flex-col items-center cursor-pointer opacity-40 hover:opacity-100 transition-opacity min-w-max" data-date="19">
+                            <span class="text-[10px] uppercase tracking-widest mb-3">Ven</span>
+                            <span class="text-xl font-serif">19</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Selector -->
+                <div class="flex flex-wrap gap-3 mb-12">
+                    <button class="time-btn px-5 py-2 text-xs border border-stone-200 rounded-full transition-all duration-300 hover:border-brand-dark">09:00</button>
+                    <button class="time-btn px-5 py-2 text-xs border border-stone-200 rounded-full transition-all duration-300 hover:border-brand-dark">10:30</button>
+                    <button class="time-btn px-5 py-2 text-xs border border-brand-gold bg-brand-gold-light text-brand-dark rounded-full transition-all duration-300">11:00</button>
+                    <button class="time-btn px-5 py-2 text-xs border border-stone-200 rounded-full transition-all duration-300 hover:border-brand-dark">14:30</button>
+                    <button class="time-btn px-5 py-2 text-xs border border-stone-200 rounded-full transition-all duration-300 hover:border-brand-dark">15:30</button>
+                    <button class="time-btn px-5 py-2 text-xs border border-stone-200 rounded-full transition-all duration-300 hover:border-brand-dark">17:00</button>
+                </div>
+
+                <!-- Validation Button -->
+                <button id="btn-valider" class="w-full bg-brand-dark text-brand-bg py-4 text-xs uppercase tracking-widest hover:bg-black transition-colors">
+                    Confirmer la demande
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. PIED DE PAGE & WHATSAPP -->
+    <footer class="bg-white border-t border-stone-200 py-12 text-center px-6">
+        <div class="font-serif text-lg tracking-widest text-brand-dark mb-4 uppercase">DR. EL BAKALI</div>
+        <p class="text-xs text-stone-500 uppercase tracking-widest leading-relaxed">
+            Lot. Riad Al Yasmin, 82A Route d'Aïn Chkef <br>
+            2ème étage, Bureau N°9, Fès
+        </p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/212660993930?text=Bonjour%20Dr%20El%20Bakali,%20je%20souhaite%20demander%20des%20informations%20pour%20un%20rendez-vous." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-white border border-stone-200 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-full group">
+        <!-- WhatsApp Icon (Custom simple styling without importing huge libs for one icon) -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-dark group-hover:text-[#25D366] transition-colors" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Confirmation Modal -->
+    <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
+        <div class="absolute inset-0 bg-brand-bg/80 backdrop-blur-sm" id="modal-backdrop"></div>
+        <div class="relative bg-white border border-stone-200 p-10 max-w-md w-full shadow-2xl transform translate-y-8 transition-transform duration-500" id="modal-content">
+            <h3 class="font-serif text-2xl font-light mb-4 text-brand-dark">Demande enregistrée.</h3>
+            <div class="w-8 h-px bg-brand-gold mb-6"></div>
+            <p class="text-sm text-stone-600 mb-8 leading-relaxed tracking-wide">
+                Notre secrétariat vous rappellera sur-le-champ pour confirmer votre horaire.
+            </p>
+            <button id="btn-close-modal" class="w-full border border-brand-dark text-brand-dark py-3 text-xs uppercase tracking-widest hover:bg-brand-bg transition-colors">
+                Fermer
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript Vanilla -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Logic for Date Selection
+            const dateBtns = document.querySelectorAll('.date-btn');
+            dateBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset all date buttons
+                    dateBtns.forEach(b => {
+                        b.classList.remove('active-date', 'text-brand-gold');
+                        b.classList.add('opacity-40');
+                        b.classList.remove('opacity-100');
+                        b.querySelector('span:first-child').classList.remove('text-brand-dark');
+                    });
+                    // Activate clicked button
+                    btn.classList.add('active-date', 'text-brand-gold', 'opacity-100');
+                    btn.classList.remove('opacity-40');
+                    btn.querySelector('span:first-child').classList.add('text-brand-dark');
+                });
+            });
+
+            // Logic for Time Selection
+            const timeBtns = document.querySelectorAll('.time-btn');
+            timeBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset all time buttons
+                    timeBtns.forEach(b => {
+                        b.className = 'time-btn px-5 py-2 text-xs border border-stone-200 rounded-full transition-all duration-300 hover:border-brand-dark text-brand-dark bg-transparent';
+                    });
+                    // Activate clicked button
+                    btn.className = 'time-btn px-5 py-2 text-xs border border-brand-gold bg-brand-gold-light text-brand-dark rounded-full transition-all duration-300';
+                });
+            });
+
+            // Modal Logic
+            const btnValider = document.getElementById('btn-valider');
+            const modal = document.getElementById('modal');
+            const modalBackdrop = document.getElementById('modal-backdrop');
+            const btnCloseModal = document.getElementById('btn-close-modal');
+            const modalContent = document.getElementById('modal-content');
+
+            const openModal = () => {
+                modal.classList.remove('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('translate-y-8');
+                modalContent.classList.add('translate-y-0');
+            };
+
+            const closeModal = () => {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                modalContent.classList.remove('translate-y-0');
+                modalContent.classList.add('translate-y-8');
+            };
+
+            btnValider.addEventListener('click', openModal);
+            btnCloseModal.addEventListener('click', closeModal);
+            modalBackdrop.addEventListener('click', closeModal);
+        });
+    </script>
+</body>
+</html>
